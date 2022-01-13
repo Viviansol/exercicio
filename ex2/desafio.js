@@ -1,5 +1,4 @@
 
-
 class Aluno {
  
 
@@ -13,12 +12,14 @@ class Aluno {
         let aluno = this.lerDados();
         if(this.validaCampos(aluno)){
             this.adicionarAluno(aluno);
+            this.listaTabela();
         }
         
     }
 
     listaTabela(){
         let tbody = document.getElementById('tbody');
+        tbody.innerText = '';
         for (let i = 0; i < this.arrayAlunos.length; i++){
             let tr = tbody.insertRow();
             let td_id = tr.insertCell();
@@ -35,8 +36,14 @@ class Aluno {
         }
     }
 
+    adicionarAluno(aluno){
+        this.arrayAlunos.push(aluno);
+        this.id++;
+
+    }
+
     lerDados(){
-        let aluno= {}
+        let aluno = {};
         
         aluno.id = this.id;
         aluno.nomeAluno = document.getElementById('name').value;
@@ -44,12 +51,9 @@ class Aluno {
         aluno.segundaNota = document.getElementById('nota2').value;
         aluno.frequencia = document.getElementById('frequencia').value;
 
+        return aluno;
     }
-    adicionarAluno(aluno){
-        this.arrayAlunos.push(aluno);
-        this.id++;
-
-    }
+   
     validaCampos(){
         let msg = '';
 
@@ -57,13 +61,13 @@ class Aluno {
            msg += ' -informe o nome \n'
         }
         if(aluno.primeiraNota ==  ''){
-            msg += "informe a primeira nota"
+            msg += "-informe a primeira nota \n"
         }
         if(aluno.segundaNota ==  ''){
-            msg += "informe a segunda nota"
+            msg += "-informe a segunda nota \n"
         }
         if(aluno.frequencia ==  ''){
-            msg += "informe a frequencia"
+            msg += "-informe a frequencia \n"
         }
         if(msg != '' ){
             alert(msg);
@@ -73,6 +77,8 @@ class Aluno {
         return true;
 
     }
+
+    
 
 }
 
