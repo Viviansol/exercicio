@@ -17,6 +17,8 @@ class Aluno {
         
     }
 
+   
+
     listaTabela(){
         let tbody = document.getElementById('tbody');
         tbody.innerText = '';
@@ -27,12 +29,15 @@ class Aluno {
             let td_nota1 = tr.insertCell();
             let td_nota2 = tr.insertCell();
             let td_frequencia = tr.insertCell();
+            let td_notaFinal = tr.insertCell();
 
             td_id.innerText = this.arrayAlunos[i].id;
             td_nome.innerText = this.arrayAlunos[i].nomeAluno;
             td_nota1.innerText = this.arrayAlunos[i].primeiraNota;
             td_nota2.innerText = this.arrayAlunos[i].segundaNota;
+            
             td_frequencia.innerText = this.arrayAlunos[i].frequencia;
+            td_notaFinal = this.arrayAlunos[i].notaFinal;
         }
     }
 
@@ -50,6 +55,7 @@ class Aluno {
         aluno.primeiraNota = document.getElementById('nota1').value;
         aluno.segundaNota = document.getElementById('nota2').value;
         aluno.frequencia = document.getElementById('frequencia').value;
+
 
         return aluno;
     }
