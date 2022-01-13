@@ -1,0 +1,211 @@
+:root{
+    --primary-violet: rgb(97, 9, 240);
+}
+
+*{
+    margin-bottom: 0;
+    margin-top: 0;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    width: 750px;
+    height: 100px;
+    background: linear-gradient(to right,rgb(71, 238, 250) 10%, var(--primary-violet) 50%, rgb(220, 5, 248) 75%);
+}
+.navbar{
+    width: 710px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    list-style-type: none;
+    background-color: navy;
+    
+
+}
+
+
+.conteudo{
+    height: 100vh;
+    display: flex;
+    flex: row;
+}
+
+.navbar li a {
+    
+    color: white;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
+    border-bottom: 0.1875rem solid white; 
+}
+
+main{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-direita{
+    width:150px;
+    
+    background-color: var(--primary-violet);
+}
+
+ul.navbar-direita{
+
+	list-style: none;
+	padding: 0;
+	width: 100%;
+}
+
+ul.navbar-direita li {
+	padding: 5px;
+	border-bottom: 2px solid #CCC;
+    border-collapse: collapse;
+}
+.centro{
+    width: 450px;
+    
+    background-color: black;
+    color: white;
+}
+
+
+
+.menu-esquerda{
+    width: 150px;
+    
+    background-color: var(--primary-violet);
+}
+
+footer{
+    width: 750px;
+    height: 100px;
+    background: linear-gradient(to right,rgb(71, 238, 250) 10%, var(--primary-violet) 50%, rgb(220, 5, 248) 75%);
+}
+
+.navbar-direita{
+   
+    list-style-type: none;
+}
+
+.navbar-direita li a {
+   
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-direita li:hover{
+    background-color: violet;
+}
+
+.form{
+    color:var(--primary-violet);
+    padding: 10px;
+  height: 100vh;
+  z-index: 3;
+}
+
+.form h1{
+    display: flex;
+    justify-content: center;
+}
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+  }
+
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--primary-violet);
+    outline: 0;
+    font-size: 1.3rem;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+  }
+
+  .form__field:hover{
+      color: transparent;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: rgb(97, 9, 240);
+  }
+
+  .form__field:focus {
+   
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+
+  }
+  
+  body {
+    font-family: 'Roboto Condensed'; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.2rem;
+    
+  }
+  
+  .contact{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+    color: rgb(97, 9, 240);
+  }
+  .btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .btn-enviar{
+
+    margin: 30px;
+    padding: 10px;
+    background-color: rgb(97, 9, 240);
+    color:cyan;
+    border: 2px solid cyan;
+    border-radius: 20px;
+  }
+  
+  .btn-enviar:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+.AlunosCadastrados{
+  margin-top:15px;
+}
+
+table{
+  border-collapse: collapse;
+  border: 1px solid  rgb(97, 9, 240);
+}
+
+table th{
+  background-color: black;
+  color: white;
+}
+

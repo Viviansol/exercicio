@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio</title>
+  <link href="desafio.css" rel="stylesheet">
+  <script src="desafio.js"></script>
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main>
+    <div class="menu">
+      <nav>
+        <ul class="navbar">
+
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="index.html">Contato</a></li>
+          <li><a href="#">Desafio</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="conteudo">
+      <div class="menu-direita">
+        <ul class="navbar-direita">
+
+
+          <li><a href="#">Sobre</a></li>
+          <li><a href="index.html">Contato</a></li>
+          <li><a href="#">Desafio</a></li>
+        </ul>
+      </div>
+      <div class="centro">
+
+        <div class="form" id="desafio-section">
+          <div class="titulo">
+            <h1>Desafio</h1>
+          </div>
+          <div class="form__group field">
+            <input type="text" class="form__field" placeholder="Nome" id='name'  />
+            <label for="name" class="form__label">Nome</label>
+          </div>
+
+          <div class="form__group field">
+            <input type="text" class="form__field" placeholder="nota1" id='nota1'  />
+            <label for="name" class="form__label">Nota 1</label>
+          </div>
+
+          <div class="form__group field">
+            <input type="text" class="form__field" placeholder="nota2" id='nota2'  />
+            <label for="name" class="form__label">Nota 2</label>
+          </div>
+
+
+          <div class="form__group field">
+            <input type="text" class="form__field" placeholder="Frequencia" id='frequencia' />
+            <label for="name" class="form__label">Frequência</label>
+          </div>
+          <div class="btn">
+            <button class="btn-enviar" onclick="aluno.salvarAluno()">Enviar</button>
+
+          </div>
+
+          <div class="tabelaAlunos">
+            <table border=1>
+              <thead>
+                <th>ID</th>
+                <th>Aluno</th>
+                <th>Primeira Nota</th>
+                <th>Segunda Nota</th>
+                <th>Frequencia</th>
+              
+              </thead>
+              <tbody id="tbody">
+               
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="menu-esquerda"></div>
+
+
+    </div>
+
+
+
+  </main>
+  <footer>
+
+  </footer>
+
+</body>
+
+</html>

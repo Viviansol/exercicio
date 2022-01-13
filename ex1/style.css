@@ -1,0 +1,54 @@
+*{
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar{
+    
+    
+    line-height: 20px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    list-style-type: none;
+    background-color: blueviolet;
+    
+
+}
+
+
+
+
+.navbar li a {
+    
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-direita{
+    width:150px;
+    
+    background-color: violet;
+}
+.centro{
+    width: 450px;
+    
+    background-color: yellow;
+}
+
+.menu-esquerda{
+    width: 150px;
+    
+    background-color: turquoise;
+}
